@@ -20,11 +20,7 @@ namespace Demo.RPS.Services
             int menuOption = int.MaxValue;
             do
             {
-                //Game Header
-                Console.Clear();
-                Console.WriteLine("\t\t\t----------------------------------");
-                Console.WriteLine("\t\t\t----- Rock Paper Scissors --------");
-                Console.WriteLine("\t\t\t----------------------------------");
+                ShowGameHeader();
                 //Menu
                 Console.WriteLine("\t\t1. Single Player");
                 Console.WriteLine("\t\t2. Multiplayer");
@@ -42,14 +38,24 @@ namespace Demo.RPS.Services
             return menuOption;
         }
 
-        public static void ShowComputerWeaponOption(int round, List<Weapon> weapons, int computerWeapon, int player,
-            int p1Score, int p2Score)
+        public static void ShowMessage(string message)
+        {
+            Console.Clear();
+            Console.WriteLine($"\t\t{message}");
+        }
+        public static void ShowGameHeader()
         {
             //Game Header
             Console.Clear();
-            Console.WriteLine($"\t\t\t----------------------------------");
-            Console.WriteLine($"\t\t\t----- Rock Paper Scissors --------");
-            Console.WriteLine($"\t\t\t----------------------------------");
+            Console.WriteLine("\t\t\t----------------------------------");
+            Console.WriteLine("\t\t\t----- Rock Paper Scissors --------");
+            Console.WriteLine("\t\t\t----------------------------------");
+        }
+
+        public static void ShowComputerWeaponOption(int round, List<Weapon> weapons, int computerWeapon, int player,
+            int p1Score, int p2Score)
+        {
+            ShowGameHeader();
             Console.WriteLine($"\t\t\t-----  Score: P1:{p1Score} P2:{p2Score}  -------");
             Console.WriteLine($"\t\t\t+ Round {round}");
             Console.WriteLine($"\t\t\t+ Player{player} turn");
@@ -70,11 +76,7 @@ namespace Demo.RPS.Services
             int chosenOption = int.MaxValue;
             do
             {
-                //Game Header
-                Console.Clear();
-                Console.WriteLine($"\t\t\t----------------------------------");
-                Console.WriteLine($"\t\t\t----- Rock Paper Scissors --------");
-                Console.WriteLine($"\t\t\t----------------------------------");
+                ShowGameHeader();
                 Console.WriteLine($"\t\t\t-----  Score: P1:{p1Score} P2:{p2Score}  -------");
                 Console.WriteLine($"\t\t\t+ Round {round}");
                 Console.WriteLine($"\t\t\t+ Player{player} turn");
@@ -98,10 +100,7 @@ namespace Demo.RPS.Services
         }
         public static void ShowStageWinner(int playerNumber, int round, int p1Score, int p2Score)
         {
-            Console.Clear();
-            Console.WriteLine($"\t\t\t----------------------------------");
-            Console.WriteLine($"\t\t\t----- Rock Paper Scissors --------");
-            Console.WriteLine($"\t\t\t----------------------------------");
+            ShowGameHeader();
             Console.WriteLine($"\t\t\t-----  Score:  P1: {p1Score} P2: {p2Score}  -------");
             Console.WriteLine($"\t\t\t+ Round {round}");
             if (playerNumber == 0)
@@ -124,10 +123,7 @@ namespace Demo.RPS.Services
                 playerNumber = 2;
             }
 
-            Console.Clear();
-            Console.WriteLine($"\t\t\t----------------------------------");
-            Console.WriteLine($"\t\t\t----- Rock Paper Scissors --------");
-            Console.WriteLine($"\t\t\t----------------------------------");
+            ShowGameHeader();
             Console.WriteLine($"\t\t\t----- FINAL Score: P1: {p1Score} P2: {p2Score} -------");
             Console.WriteLine($"\t\t\t+ Player{playerNumber} WINS!!!");
             Console.WriteLine($"\t\t\t----------------------------------");

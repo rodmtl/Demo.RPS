@@ -4,7 +4,7 @@ Rock paper scissor game (RPS)
 
 Experimental Features:
 
-- Add Weapon Feature
+- TODO: Add Weapon Feature
 - Enable Computer player random mode
 
 TODO:
