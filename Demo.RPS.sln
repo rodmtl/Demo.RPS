@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.RPS", "Demo.RPS\Demo.RPS.csproj", "{D6CD5F26-9D21-4C19-AA71-AB4A6D37B773}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.RPS", "Demo.RPS\Demo.RPS.csproj", "{D6CD5F26-9D21-4C19-AA71-AB4A6D37B773}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6CEFF92A-B20A-4335-8B7E-495D22820CC2}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
