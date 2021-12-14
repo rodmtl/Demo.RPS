@@ -9,7 +9,7 @@ Experimental Features:
 
 TODO:
 
-- Add color Sonsole Features
-- Player Name Feature
 - Refactor int options to Enums
+- Add colored Console Features
+- Player Name Feature
 - Load Weapons config from DB or file?
